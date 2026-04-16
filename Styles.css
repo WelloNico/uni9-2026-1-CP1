@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #0e6666;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav li {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+/* HERO */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+body > p {
+    text-align: center;
+    margin: 15px auto 40px;
+    max-width: 500px;
+    color: #666;
+}
+
+/* GRID DE SERVIÇOS */
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 40px 40px;
+}
+
+/* CARDS */
+section {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGENS */
+section img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TEXTO DOS CARDS */
+section h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+section p {
+    padding: 0 10px 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* TÍTULOS PERSONALIZADOS */
+.Banho h2::after {
+    content: "Banho";
+}
+
+.Tosa h2::after {
+    content: "Tosa";
+}
+
+.Adoção h2::after {
+    content: "Adoção";
+}
+
+/* DESCRIÇÕES */
+.Banho p::after {
+    content: "Cuidado completo com produtos de qualidade.";
+}
+
+.Tosa p::after {
+    content: "Estilo e conforto para seu pet.";
+}
+
+.Adoção p::after {
+    content: "Encontre um novo melhor amigo.";
+}
+
+
+footer {
+    background-color: #348372;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-container p:first-child {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+div {
+    flex: 1;
+}
